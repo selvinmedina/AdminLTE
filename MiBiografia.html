@@ -237,16 +237,16 @@ desired effect
           <img src="dist\img\user1-128x128.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>Selvin Medina</p>
           <!-- Status -->
-          <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
+          <a href="#"><i class="fa fa-circle text-success"></i> En línea</a>
         </div>
       </div>
 
       <!-- search form (Optional) -->
       <form action="#" method="get" class="sidebar-form">
         <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <input type="text" name="q" class="form-control" placeholder="Buscar...">
           <span class="input-group-btn">
               <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
               </button>
@@ -259,7 +259,7 @@ desired effect
       <ul class="sidebar-menu" data-widget="tree">
 
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Mi biografia</span></a></li>
+        <li class="active"><a href="#"><i class="fa fa-bold"></i> <span>Mi biografia</span></a></li>
         <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
         <li class="treeview">
           <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
@@ -296,26 +296,112 @@ desired effect
     <section class="content container-fluid">
 
       <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-3">
           <div class="box box-primary">
-            <div class="box-header with-border">
-              <h3 class="box-title">Éste soy yo</h3>
+
+            <div class="box-body box-primary">
+              <img class="profile-user-img img-responsive img-circle" src="dist/img/user1-128x128.jpg" alt="User profile picture">
+              <h3 class="profile-username text-center">Selvin Medina</h3>
+
+                <p class="text-muted text-center">Desarrollador de Software</p>
+
+                <ul class="list-group list-group-unbordered">
+                  <li class="list-group-item">
+                    <b>Seguidores</b> <a class="pull-right">150,000</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Siguiendo</b> <a class="pull-right">500</a>
+                  </li>
+                  <li class="list-group-item">
+                    <b>Amigos</b> <a class="pull-right">17,000</a>
+                  </li>
+                </ul>
+                <a href="#" class="btn btn-primary btn-block"><b>Seguir</b></a>
+
             </div>
-            <form class="form-horizontal">
-              <div class="box-body">
-                <div class="form-group">
-                  <p class="col-sm-12 text-justify">Nació en el año 2000 el 16 de Junio a las 2:00:00 entro a la escuela a los 5 años, era bien responsable, y crecio con sus abuelos, sus abuelos le decian que hiciera la tarea, y el fue aprendiendo poco a poco a ser mas responsable luego se graduó de la escuela a los 12 años y entro al colegio a los 13 años
 
-                  El se portaba un poco mal y por eso la madre se lo quizo llevar a USA y no pasó, entonces cuando regresó a Honduras el el padre lo tomo y se lo llevo a su hogar, el fue todavía mas responsable y puntual con las tareas y así el fue sacando mejores notas y comenzó a destacar en el colegio, se graduó de Bachiller Técnico progesional en Informática y con un promedio de 97.2% y luego entró a una academia de programadores que actualmente el esta asistiendo para ser un programador profesional el tiene muchas metas y es un visionario.
-
-                  Tiene como objetivos ser un profesional de clase A en su área y tener mucho éxito personal y profesional, el no forma parte de ninguna religion por que piensa que no es lo suyo, el quiere ser más espiritual y desarrollarse cada día más y ser una mejor persona siempre.
-
-                  Actualmente quiere enfocarse al 100% en ser un gran programador, y tiene como objetivo practicar todos los días, está aprendiendo el lenguaje c# al mismo tiempo quiere aprender JavaScript y practicar muchísimo</p>
-                </div>
-              </div>
-            </form>
           </div>
         </div>
+        <div class="col-md-9">
+          <div class="nav-tabs-custom">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#activity" data-toggle="tab">Actividad</a></li>
+              <li><a href="#timeline" data-toggle="tab">Linea de tiempo</a></li>
+              <li><a href="#settings" data-toggle="tab">Configuraciones</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="active tab-pane" id="activity">
+                <!-- Post -->
+                <div class="post">
+                  <div class="user-block">
+                    <img class="img-circle img-bordered-sm" src="dist/img/user1-128x128.jpg" alt="user image">
+                        <span class="username">
+                          <a href="#">Selvin Medina</a>
+                          <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
+                        </span>
+                    <span class="description">Compartido públicamente - 10:30 PM hoy</span>
+                  </div>
+                  <!-- Post -->
+                  <div class="post clearfix">
+                  <div class="user-block">
+                    <img class="img-circle img-bordered-sm" src="dist/img/user7-128x128.jpg" alt="User Image">
+                        <span class="username">
+                          <a href="#">Sarah Ross</a>
+                          <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
+                        </span>
+                    <span class="description">Te envié un mensaje - hace 3 días</span>
+                  </div>
+                  <!-- /.user-block -->
+                  <p>
+                    Texto personalizado
+                  </p>
+
+                  <form class="form-horizontal">
+                    <div class="form-group margin-bottom-none">
+                      <div class="col-sm-9">
+                        <input class="form-control input-sm" placeholder="Respuesta">
+                      </div>
+                      <div class="col-sm-3">
+                        <button type="submit" class="btn btn-danger pull-right btn-block btn-sm">Enviar</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <!-- Post -->
+                <div class="post">
+                  <div class="user-block">
+                    <img class="img-circle img-bordered-sm" src="dist/img/user6-128x128.jpg" alt="User Image">
+                        <span class="username">
+                          <a href="#">Adam Jones</a>
+                          <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
+                        </span>
+                    <span class="description">Posted 5 photos - 5 days ago</span>
+                  </div>
+                  <!-- /.user-block -->
+                  <div class="row margin-bottom">
+                    <div class="col-sm-6">
+                      <img class="img-responsive" src="dist/img/photo1.png" alt="Photo">
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-sm-6">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <img class="img-responsive" src="dist/img/photo2.png" alt="Photo">
+                          <br>
+                          <img class="img-responsive" src="dist/img/photo3.jpg" alt="Photo">
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-sm-6">
+                          <img class="img-responsive" src="dist/img/photo4.jpg" alt="Photo">
+                          <br>
+                          <img class="img-responsive" src="dist/img/photo1.png" alt="Photo">
+                        </div>
+                        <!-- /.col -->
+                      </div>
+                      <!-- /.row -->
+                    </div>
+                    <!-- /.col -->
+                  </div>
       </div>
 
 
