@@ -4,9 +4,9 @@
 // Evento de  carga
 
 $(document).ready(()=>{
-  // $('#txtNombres').val('Selvin');
-  // $('#txtNombres').focus();
-  // $('#txtApellidos').val('Medina');
+  $('#txtNombres').val('Selvin');
+  $('#txtNombres').focus();
+  $('#txtApellidos').val('Medina');
 })
 
 $('#btnSucess').click(()=>{
