@@ -27,3 +27,25 @@ function MsgInfo(Titulo, Mensaje){
     message: Mensaje,
   });
 };
+
+function MsgPresentation(Titulo, Mensaje){
+  iziToast.show({
+      theme: 'dark',
+      icon: 'fa fa-user',
+      title: Titulo,
+      message: Mensaje,
+      position: 'center', // bottomRight, bottomLeft, topRight, topLeft, topCenter, bottomCenter
+      progressBarColor: 'rgb(0, 255, 184)',
+      buttons: [
+          ['<button>Ok</button>', function (instance, toast) {
+          }, true], // true to focus
+          ['<button>Close</button>', function (instance, toast) {
+              instance.hide({
+                  transitionOut: 'fadeOutUp',
+                  onClosing: function(instance, toast, closedBy){
+                  }
+              }, toast, 'buttonName');
+          }]
+      ],
+  });
+};
