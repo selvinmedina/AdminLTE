@@ -38,11 +38,13 @@ function MsgPresentation(Titulo, Mensaje){
       progressBarColor: 'rgb(0, 255, 184)',
       buttons: [
           ['<button>Ok</button>', function (instance, toast) {
+              alert("Hello world!");
           }, true], // true to focus
           ['<button>Close</button>', function (instance, toast) {
               instance.hide({
                   transitionOut: 'fadeOutUp',
                   onClosing: function(instance, toast, closedBy){
+                      console.info('closedBy: ' + closedBy); // The return will be: 'closedBy: buttonName'
                   }
               }, toast, 'buttonName');
           }]

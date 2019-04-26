@@ -2,7 +2,6 @@
 // En js puro no se utiliza el signo de dolar, jquiery lo utiliza
 //Así se usa el método click en jQuery, señalo el botón que quiero, o imagenes
 // Evento de  carga
-
 $(document).ready(()=>{
   $('#txtNombres').val('Selvin');
   $('#txtNombres').focus();
@@ -74,3 +73,19 @@ $('#btnPromediar').click(()=>{
     }
   MsgPresentation('El promedio es:',Mensaje.toString());
 })
+
+$('#btnCalcular').click(()=>{
+    var Nacimiento = parseInt($('#txtNacimiento').val());
+    console.log('Nacimiento', Nacimiento);
+    var Resultado = 2019 - Nacimiento;
+    if(Resultado >= 21)
+    MsgSucess('Sucess', 'Felicidades usted es mayor de edad');
+    else
+      MsgDanger('Error', 'Usted es muy pequeño');
+});
+
+$('#btnPrueba').click(()=>{
+  var Prueba = parseInt($('#txtPrueba').val());
+  var Resultado = Prueba * Prueba;
+  MsgPresentation('Su resultado es: ', Resultado.toString());
+});
