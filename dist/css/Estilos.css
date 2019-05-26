@@ -1,0 +1,112 @@
+#border{
+  background-color: #0c153d;
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+}
+#left{
+  background-color: #0c153d;
+  padding: 10px;
+  height: 30px;
+  border-top-left-radius: 25px;
+}
+
+#right{
+  background-color: #0c153d;
+  padding: 10px;
+  height: 30px;
+  border-top-right-radius: 25px;
+}
+#bottom-rigth{
+  background-color: #0c153d;
+  padding: 10px;
+  height: 30px;
+  border-bottom-right-radius: 25px;
+}
+#botton-left{
+  background-color: #0c153d;
+  padding: 10px;
+  height: 30px;
+  border-bottom-left-radius: 25px;
+}
+#sombra1{
+  background-color: #0c153d;
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #999;
+}
+#opacidad1{
+  background-color: #0c153d;
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px #999;
+  opacity: 0.45;
+}
+#degradado1{
+
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, rgb(17, 255, 255) , rgb(38, 0, 255));
+
+}
+#degradado2{
+
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, red , rgb(83, 7, 39));
+
+}
+
+.espacio{
+  margin: 5px;
+}
+
+#EscalaOriginal{
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, rgb(60, 255, 0) , rgb(2, 61, 34));
+
+
+}
+#EscalaTransformada{
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, rgb(60, 255, 0) , rgb(2, 61, 34));
+   transform: translate(100px,50px);
+}
+
+#RotacionOriginal{
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, rgb(229, 253, 12) , rgb(235, 235, 121));
+  transform: rotate(180deg);
+}
+#RotacionTransformada{
+  padding: 10px;
+  height: 30px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, rgb(229, 253, 12) , rgb(235, 235, 121));
+  transform: rotate(30deg);
+}
+
+#Rotacion2D{
+  padding: 10px;
+  height: 100px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, red , yellow);
+  transform: skew(20deg,30deg);
+}
+#Rotacion3D{
+  padding: 10px;
+  height: 100px;
+  border-radius: 25px;
+  background-image: linear-gradient(to right, red , yellow);
+  transform: skewX(45deg);
+}
